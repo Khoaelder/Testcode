@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vo Thanh Khoa - Sony Management Page</title>
+    <h1>Welcome to Home Page!</h1>
+    <p>You have successfully logged in.</p>
+    <style>
+
+        body {
+            background-color: #02CAA9;
+
+            font-family: Arial, sans-serif;
+
+            color: white;
+
+            padding: 20px;
+        }
+
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p, td, th, a {
+            font-size: 18px;
+        }
+
+
+        a {
+            color: #FFFF00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse
+            background-color: rgba(255, 255, 255, 0.1); /
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 12px;
+            text-align: left;
+        }
+
+
+        tbody tr:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+<p>
+    <a th:href="@{/create}"> Add new product</a>
+</p>
+
+<!--<table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>productId</th>-->
+<!--        <th>productName</th>-->
+<!--        <th>price</th>-->
+<!--        <th>stock</th>-->
+<!--        <th>createdAt</th>-->
+<!--        <th>Category</th>-->
+
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="sonyProduct : ${sonyProducts}">-->
+<!--        <td th:text="${sonyProduct.productId}"></td>-->
+<!--        <td th:text="${sonyProduct.productName}"></td>-->
+<!--        <td th:text="${sonyProduct.price}"></td>-->
+<!--        <td th:text="${sonyProduct.stock}"></td>-->
+<!--        <td th:text="${sonyProduct.createdAt}"></td>-->
+<!--        <td th:text="${sonyProduct.sonyCategories.cateName}"></td>-->
+
+<!--        <td>-->
+<!--            <a th:href="@{/edit/{id}(id=${sonyProduct.productId})}">-->
+<!--                Edit-->
+<!--            </a> |-->
+<!--            <a th:href="@{/delete/{id}(id=${sonyProduct.productId})}">-->
+<!--                Delete-->
+<!--            </a>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+</body>
+</html>

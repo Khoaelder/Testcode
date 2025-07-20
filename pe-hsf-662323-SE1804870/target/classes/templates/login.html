@@ -1,0 +1,31 @@
+<!--file login -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SE180470-Login Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{hsf302.css}"/>
+</head>
+<body>
+
+<div class="login-container">
+    <h1 class="title">login page</h1>
+    <form th:action="@{/login}" method="post">
+        <table>
+            <tr>
+                <td><label for="email">email:</label></td>
+                <td><input type="text" id="email" name="email" th:value="${email}"/></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" th:value="${password}"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* hsf302.css */
+body{
+
+    background-color: #FFD966;
+    font-family: Tahoma, sans-serif;
+    font-size: 19px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+
+}
+.title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.login-container{
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.login-container table {
+    margin: 0 auto;
+}
